@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Sending SMS Notification'
-        uses: twilio-labs/actions-sms@master
+        uses: twilio-labs/actions-sms@main
         with:
           fromPhoneNumber: ${{ secrets.fromPhoneNumber }} # alternatively, use a Repository Secret
           toPhoneNumber: ${{ secrets.toPhoneNumber }} # alternatively, use a Repository Secret
