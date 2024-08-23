@@ -14,6 +14,6 @@ jobs:
       - name: 'Sending SMS Notification'
         uses: twilio-labs/actions-sms@main
         with:
-          fromPhoneNumber: ${{ secrets.fromPhoneNumber }} # alternatively, use a Repository Secret
-          toPhoneNumber: ${{ secrets.toPhoneNumber }} # alternatively, use a Repository Secret
+          fromPhoneNumber: ${{ secrets.FROM_PHONE_NUMBER }} # alternatively, use a Repository Secret
+          toPhoneNumber: ${{ secrets.TO_PHONE_NUMBER }} # alternatively, use a Repository Secret
           message: 'Hello from Twilio'
